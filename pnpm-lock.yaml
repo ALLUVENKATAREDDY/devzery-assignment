@@ -5,6 +5,7 @@ dependencies:
   axios: 1.7.7
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1
+  react-router-dom: 6.26.2_react-dom@18.3.1+react@18.3.1
   react-scripts: 5.0.1_react@18.3.1
   web-vitals: 2.1.4
 devDependencies:
@@ -2213,6 +2214,12 @@ packages:
         optional: true
     resolution:
       integrity: sha512-LFWllMA55pzB9D34w/wXUCf8+c+IYKuJDgxiZ3qMhl64KRMBHYM1I3VdGaD2BV5FNPV2/S2596bppxHbv2ZydQ==
+  /@remix-run/router/1.19.2:
+    dev: false
+    engines:
+      node: '>=14.0.0'
+    resolution:
+      integrity: sha512-baiMx18+IMuD1yyvOGaHM9QrVUPGGG0jC+z+IPHnRJWUAUvaKuWKyE8gjDj2rzv3sz9zOGoRSPgeBVHRhZnBlA==
   /@rollup/plugin-babel/5.3.1_@babel+core@7.25.7+rollup@2.79.2:
     dependencies:
       '@babel/core': 7.25.7
@@ -9191,6 +9198,31 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
+  /react-router-dom/6.26.2_react-dom@18.3.1+react@18.3.1:
+    dependencies:
+      '@remix-run/router': 1.19.2
+      react: 18.3.1
+      react-dom: 18.3.1_react@18.3.1
+      react-router: 6.26.2_react@18.3.1
+    dev: false
+    engines:
+      node: '>=14.0.0'
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    resolution:
+      integrity: sha512-z7YkaEW0Dy35T3/QKPYB1LjMK2R1fxnHO8kWpUMTBdfVzZrWOiY9a7CtN8HqdWtDUWd5FY6Dl8HFsqVwH4uOtQ==
+  /react-router/6.26.2_react@18.3.1:
+    dependencies:
+      '@remix-run/router': 1.19.2
+      react: 18.3.1
+    dev: false
+    engines:
+      node: '>=14.0.0'
+    peerDependencies:
+      react: '>=16.8'
+    resolution:
+      integrity: sha512-tvN1iuT03kHgOFnLPfLJ8V95eijteveqdOSk+srqfePtQvqCExB8eHOYnlilbOcyJyKnYkr1vJvf7YqotAJu1A==
   /react-scripts/5.0.1_react@18.3.1:
     dependencies:
       '@babel/core': 7.25.7
@@ -11312,6 +11344,7 @@ specifiers:
   postcss: ^8.4.47
   react: ^18.3.1
   react-dom: ^18.3.1
+  react-router-dom: ^6.26.2
   react-scripts: 5.0.1
   tailwindcss: ^3.4.13
   web-vitals: ^2.1.4
